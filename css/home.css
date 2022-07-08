@@ -144,27 +144,38 @@
 
  /* Info */
  .info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   padding: 3rem;
 }
-img{
-  width: 100%;
+.image{
+  width: 50%;
+  padding: 50px;
 }
 
- /* Media Queries */
- @media (max-width: 700px) {
-  .info {
-    grid-template-columns: 1fr;
-  }
+.experience{
+  width: 50%;
+  padding: 50px;
+  text-align: justify;
+}
+
+.info img{
+  width: 100%;
+  border-left: 10px solid blue;
+  border-radius: 15px;
+ 
+}
+
+.image:hover img{
+  box-shadow: 10px 10px 10px 10px gray;
+}
+
 
   .info .btn {
     display: block;
     text-align: center;
     margin: auto;
   }
- }
+ 
 
  /*  */
  .filterDiv {

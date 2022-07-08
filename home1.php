@@ -11,7 +11,6 @@
     ?>
         <video autoplay muted loop id="myVideo">
             <source src="tour.mp4" type="video/mp4">
-           
           </video>
 
          
@@ -32,13 +31,15 @@
 
 
     <section id="Home" class="info bg-dark">
-        <img class="rounded" src="https://htmldesigntemplates.com/html/yatriiworld/images/destination/destination12.jpg"
-            alt="">
-        <div>
+        <div class="image">
+        <img src="https://images.pexels.com/photos/287240/pexels-photo-287240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"alt="loading">
+
+            </div>
+        <div class="experience">
             <h2 class="text-light">We're truely dedicated to make your travel experience best</h2>
             <p class="text-light" id="lm1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias
                 reiciendis deleniti possimus nemo non repellendus?
-                Quae atque vero modi quidem! Autem cupiditate fugit doloribus ad amet, asperiores provident commodi.
+                
             </p>
             <button class="btn rounded-pill bg-secondary text-light" onclick="myFunction1()">Learn More</button>
         </div>

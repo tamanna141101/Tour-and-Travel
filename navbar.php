@@ -32,9 +32,9 @@
                         <li class="nav-item"><a class="nav-link active fw-bolder " style="color: #6610f2"
                                 aria-current="page" href="home1.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-light   " aria-current="page"
-                                href="destination.html">Destination</a></li>
+                                href="destination.php">Destination</a></li>
                         <li class="nav-item"><a class="nav-link text-light  " aria-current="page"
-                                href="package.html">Package</a></li>
+                                href="package.php">Package</a></li>
                         <li class="nav-item"><a class="nav-link text-light " aria-current="page" href="gallery.php">Gallery</a>
                         </li>
                         <li class="nav-item"><a class="nav-link text-light " aria-current="page" href="about.php">About
