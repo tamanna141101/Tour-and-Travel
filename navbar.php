@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active fw-bolder " style="color: #6610f2"
-                                aria-current="page" href="home1.php">Home</a></li>
+                                aria-current="page" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-light   " aria-current="page"
                                 href="destination.php">Destination</a></li>
                         <li class="nav-item"><a class="nav-link text-light  " aria-current="page"
