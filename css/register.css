@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;400&family=Rubik+Moonrocks&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima', cursive;
+    font-size: 15px;
+   
+     
+  }
+  #head{
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 64), rgb(199, 93, 231), rgb(139, 139, 219) ,rgb(199, 93, 231) ,rgb(255, 0, 64));
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    height: 100vh;
+  }
+  
+
+  .form{
+    position: absolute;
+	top: 57%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 450px;
+	padding: 20px;
+	background: rgba(0,0,0,.4);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+  }
+
+  .form h2{
+    margin: 0 0 5px;
+	padding: 0;
+	color: #FFF;
+	text-align: center;
+  }
+
+  .form .inputBox{
+    padding-top: 10px;
+  }
+
+  .form .inputBox1{
+    padding-top: 20px;
+  }
+  .form .inputBox input{
+   position: relative;
+	padding: 10px 15px;
+	font-size: 16px;
+	color: #FFF;
+	letter-spacing: 1px;
+	border: none;
+	border-bottom: 1px solid #FFF;
+	outline: none;
+	background: transparent;
+  }
+
+  .form .inputBox label{
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #FFF;
+	pointer-events: none;
+	
+  }
+
+  .form .errors{
+    color: rgb(170, 2, 2);
+  }
+
+  .form .btn{
+    color: #FFF;
+    padding: 7px;
+    border: 1px solid #FFF;
+    background: transparent;
+    border-radius: 30px;
+  }
+  .form .btn:hover{
+    color: black;
+    background: aqua;
+  }
+
+  .singin{
+    padding-top: 20px;
+    display: flex;
+    color: #FFF;
+  }
+  .singin p{
+
+    font-size: 16px;
+    padding-right: 5px;
+  }
+

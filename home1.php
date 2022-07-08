@@ -1,3 +1,9 @@
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Swiper css -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <section id="header"> 
 <?php
@@ -319,7 +325,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2018/03/28/01/04/water-3267961__340.jpg"
+                                <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <i class="fa-solid fa-location-dot text-muted home_s_card">Germany</i>
@@ -343,7 +349,7 @@
     
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2018/03/28/01/04/water-3267961__340.jpg"
+                                <img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <i class="fa-solid fa-location-dot text-muted home_s_card">Japan</i>
@@ -367,7 +373,7 @@
     
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2018/03/28/01/04/water-3267961__340.jpg"
+                                <img src="https://images.pexels.com/photos/1718337/pexels-photo-1718337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <i class="fa-solid fa-location-dot text-muted home_s_card">Thailand</i>
@@ -391,7 +397,7 @@
     
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="https://cdn.pixabay.com/photo/2018/03/28/01/04/water-3267961__340.jpg"
+                                <img src="https://images.pexels.com/photos/4210037/pexels-photo-4210037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <i class="fa-solid fa-location-dot text-muted home_s_card">Mexico</i>
@@ -415,7 +421,7 @@
     
                         <div class="swiper-slide">
                             <div class="card">
-                                <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                <img src="https://images.pexels.com/photos/2470607/pexels-photo-2470607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <i class="fa-solid fa-location-dot text-muted home_s_card"> Indonesia</i>

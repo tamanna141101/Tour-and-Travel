@@ -42,7 +42,9 @@
     border-radius: 15px;
    }
   
-  
+   .user .fa-solid{
+    color: white;
+   }
   #myVideo {
   position: absolute;
   bottom: 0;
@@ -217,7 +219,7 @@ img{
  
  /* fav destination */
  #favourite-destination .card {
-  background-color: antiquewhite;
+  background-color: rgb(255, 242, 244);
  }
  /* sweper js */
 
