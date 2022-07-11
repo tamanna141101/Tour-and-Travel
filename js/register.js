@@ -15,6 +15,17 @@ function validate() {
         check = 1;
     }
 
+    var uname = document.getElementById('uname').value;
+
+    if (uname.length == 0) {
+        document.getElementById('unameError').innerHTML = "Input Your Name";
+        check = 1;
+    }
+    else if (uname.length < 1) {
+        document.getElementById('unameError').innerHTML = "Name length must be one or more.";
+        check = 1;
+    }
+
     var email = document.getElementById('email').value;
 
     if (email.length == 0) {
@@ -34,7 +45,7 @@ function validate() {
 
     var phone = document.getElementById('phone').value;
 
-    if (email.length == 0) {
+    if (phone.length == 0) {
         document.getElementById('phoneError').innerHTML = "Input Your Phone Number";
         check = 1;
     }
@@ -89,3 +100,8 @@ function validate() {
     return false;
 
 }
+
+
+
+
+

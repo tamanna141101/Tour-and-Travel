@@ -46,12 +46,17 @@
 
 
                     </ul>
-                    <ul class="navbar-nav user">
-                            <li class="nav-item"><a class="nav-link fs-2"
-                                    aria-current="page" href="login.php"><i class="fa-solid fa-circle-user"></i><a></a>
-                            </li>
+                    <div class="dropdown user">
+  <span><i class="fa-solid fa-circle-user fs-2"> </i></span>
+  <div class="dropdown-content">
+  <a href="#">Log out</a>
+   
+   
+  </div>
+</div>
+                        
 
-                        </ul>
+                    
                 </div>
             </div>
         </nav>

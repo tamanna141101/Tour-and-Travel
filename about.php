@@ -12,6 +12,8 @@
 
 <div class="content">
             <h1>About <span class="text-danger"> Us</span></h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odio impedit veritatis facere natus, distinctio, quod.
+            </h3>
         </div>
     </section>
 
@@ -96,7 +98,7 @@
             <p class="w-50 text-center m-auto">Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
             <pre>- - - - -</pre>
 
-            <div class="swiper mt-5">
+            <div class="swiper mt-1">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="mx-3">

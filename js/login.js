@@ -4,23 +4,18 @@ function validate() {
     item.innerHTML="";
 
     var check = 0;
-    var email = document.getElementById('email').value.trim();
+    
 
-    if (email.length == 0) {
-        document.getElementById('emailError').innerHTML = "Input Your email";
+    var uname = document.getElementById('uname').value.trim();
+
+    if (uname.length == 0) {
+        document.getElementById('unameError').innerHTML = "Input Your Name";
         check = 1;
     }
-
-    else if (!email.match(/[@]/)) {
-        document.getElementById('emailError').innerHTML = "Input a valid email";
+    else if (uname.length < 1) {
+        document.getElementById('unameError').innerHTML = "Name length must be one or more.";
         check = 1;
     }
-
-    else if (email.indexOf('@') == 0) {
-        document.getElementById('emailError').innerHTML = "Input a valid email";
-        check = 1;
-    }
-
 
 
 
@@ -38,3 +33,12 @@ function validate() {
     return false;
 
 }
+
+function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }

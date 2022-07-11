@@ -45,13 +45,13 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
    
    }
 
 .glry{
     color: aliceblue;
-    padding: 250px;
+    padding: 150px;
     text-align: center;
 }
 

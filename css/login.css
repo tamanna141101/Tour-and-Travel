@@ -59,15 +59,20 @@
 	background: transparent;
   }
 
+  .form .inputBox{
+    color: #FFF;
+  }
   .form .inputBox label{
 	top: 0;
 	left: 0;
 	padding: 10px 0;
 	font-size: 16px;
-	color: #FFF;
+
 	pointer-events: none;
 	
   }
+
+  
 
   .form .errors{
     color: rgb(170, 2, 2);
@@ -85,12 +90,12 @@
     background: aqua;
   }
 
-  .singup{
+  .signup{
     padding-top: 20px;
     display: flex;
     color: #FFF;
   }
-  .singup p{
+  .signup p{
 
     font-size: 16px;
     padding-right: 5px;

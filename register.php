@@ -8,7 +8,7 @@
 
     <div class="form">
         <h2>Sign Up</h2>
-        <form action="#" method="" onsubmit="return validate()">
+        <form action="" method="POST" onsubmit="return validate()">
             <!-- start of a form. after submission the destination page link in written inside 'action' attribute.
                 there are two types of methods mainly.
                 1) get(by default): all the values giver by user are showed in the url.  
@@ -18,6 +18,15 @@
             <input type="text" id="name" name="name" autocomplete="off" class="input">
             <br>
             <span id="nameError" class="errors"></span>
+            <!-- takes text type input -->
+            <!-- 'name' is used to send the value to backend. 'autocomplete=off' is used to stop showing previous values. if user doesn't fill any value then the value inside 'value' attribute comes in action -->
+            </div>
+
+            <div class="inputBox">    
+            <label for="uname">Userame: </label>
+            <input type="text" id="uname" name="uname" autocomplete="off" class="input">
+            <br>
+            <span id="unameError" class="errors"></span>
             <!-- takes text type input -->
             <!-- 'name' is used to send the value to backend. 'autocomplete=off' is used to stop showing previous values. if user doesn't fill any value then the value inside 'value' attribute comes in action -->
             </div>
@@ -65,14 +74,14 @@
     
             <!-- submit button -->
             <div class="inputBox1">
-            <input class="btn" type="submit" value="Sign up">
+            <input class="btn"  type="submit" value="Sign up">
             </div>
     
         </form>
 
-        <div class="singin">
-        <p>Already have an Account </p>
-       <a href="login.php"><input class="btn" type="submit" value="Sign in"></a>
+        <div class="signin">
+        <p>Already have an Account? </p>
+       <a href="login.php">Sign in</a>
     </div>
 
     </div>
