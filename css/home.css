@@ -74,7 +74,13 @@
     display: block;
   }
 
-
+  .wel_log{
+    display: flex;
+    color: #fff;
+  }
+  .welcome{
+   margin-right: 10px;
+  }
 
   #myVideo {
   position: absolute;

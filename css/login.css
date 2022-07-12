@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Arima', cursive;
-    font-size: 15px;
+    font-size: 17px;
    
      
   }
@@ -19,7 +19,16 @@
     height: 100vh;
   }
   
-
+  .message{
+    margin:10px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+    background-color: red;
+    color:white;
+    font-size: 20px;
+ }
   .form{
     position: absolute;
 	top: 57%;
@@ -34,7 +43,8 @@
   }
 
   .form h2{
-    margin: 0 0 5px;
+    font-size: 40px;
+  margin: 0 0 5px;
 	padding: 0;
 	color: #FFF;
 	text-align: center;
@@ -66,7 +76,7 @@
 	top: 0;
 	left: 0;
 	padding: 10px 0;
-	font-size: 16px;
+	font-size: 18px;
 
 	pointer-events: none;
 	
@@ -96,8 +106,13 @@
     color: #FFF;
   }
   .signup p{
-
-    font-size: 16px;
+    font-size: 18px;
     padding-right: 5px;
+  }
+
+  .signup a{
+    font-size: 18px;
+    margin-top: 18px;
+    color: #FFF;
   }
 

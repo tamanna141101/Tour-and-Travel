@@ -9,6 +9,8 @@
 <?php
     @include 'navbar.php';
     ?>
+
+    
         <video autoplay muted loop id="myVideo">
             <source src="tour.mp4" type="video/mp4">
           </video>
