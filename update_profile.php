@@ -62,10 +62,10 @@ if(isset($_POST['update_profile'])){
    
    ?>
 
-   <form action="" method="post" enctype="multipart/form-data">
+   <form action="" method="post" >
      
-      <div class="flex ">
-         <div class="inputBox  ">
+      <div class="flex">
+         <div class="inputBox">
             <span>username :</span>
             <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box">
             <span>your email :</span>

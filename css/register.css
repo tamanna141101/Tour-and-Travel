@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: center;
-    height: 100vh;
+    height: 100%;
   }
   
   .message{
@@ -32,7 +32,7 @@
 
   .form{
   position: absolute;
-	top: 57%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	width: 500px;

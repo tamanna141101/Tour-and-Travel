@@ -12,7 +12,7 @@
 
     
         <video autoplay muted loop id="myVideo">
-            <source src="tour.mp4" type="video/mp4">
+            <source src="image/tour.mp4" type="video/mp4">
           </video>
 
          
@@ -457,6 +457,7 @@
     <?php
     @include 'footer.php';
     ?>
+
 
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

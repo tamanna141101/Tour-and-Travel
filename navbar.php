@@ -4,19 +4,7 @@ include 'config.php';
 session_start();
 $user_id = $_SESSION['user_id'];
 
-if(!isset($user_id)){
-    header("location:http://localhost/tat/login.php");
-};
-
-if(isset($_GET['logout'])){
-   unset($user_id);
-   session_destroy();
-   header("location:http://localhost/tat/login.php");
-}
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,14 +64,15 @@ if(isset($_GET['logout'])){
                     </ul>
                     <div class="wel_log">
                         <div class="welcome">
-                            <h3><?php echo $fetch['name']; ?></h3>
+                            <h3><?php echo $fetch['name'];?></h3>
                         </div>
 
                         <div class="dropdown user">
                             <span><i class="fa-solid fa-circle-user fs-2"> </i></span>
                             <div class="dropdown-content">
-                                <a href="index.php?logout=<?php echo $user_id; ?>">Log out</a>
-                                <a href="update_profile.php">Account</a>
+                                <a id="login" href="login.php">log In</a>
+                                <a id="logout" href="book.php?logout=<?php echo $user_id; ?>">Log out</a>
+                                <a id="account" href="update_profile.php">Account</a>
 
 
                             </div>
@@ -95,5 +84,22 @@ if(isset($_GET['logout'])){
             </div>
         </nav>
     </section>
+
+    <script>
+        let user = "<?php echo $fetch['name']; ?>";
+        console.log(user);
+
+
+        if(user){
+            document.getElementById("logout").style.display = "block";
+            document.getElementById("account").style.display = "block";
+            document.getElementById("login").style.display = "none";
+        }
+        else{
+            document.getElementById("logout").style.display = "none";
+            document.getElementById("account").style.display = "none";
+            document.getElementById("login").style.display = "block";
+        }
+    </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/home.js"></script>

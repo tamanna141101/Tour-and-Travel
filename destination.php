@@ -23,7 +23,7 @@
             <div class="card-body">
                 <h3 class="card-title">Paris</h3>
                 <p class="card-text fs-5">3 days & 2 night <br> From<span class="text-danger fw-bold">$350.00</p>
-                <a href="booking.php"><button class="btn">Book Now</button></a>
+                <a href="book.php"><button class="btn">Book Now</button></a>
             </div>
         </div>
 

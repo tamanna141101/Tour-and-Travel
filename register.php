@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
          }
 
          
-        
+
             else{ $insert = mysqli_query($conn, "INSERT INTO user_form(name, email, phone, password) VALUES('{$name}', '{$email}', '{$phone}','{$password}')") or die('query failed');
               header("location:http://localhost/tat/login.php");
            

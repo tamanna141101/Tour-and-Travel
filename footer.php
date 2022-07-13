@@ -1,4 +1,5 @@
 <!-- footer -->
+<link rel="stylesheet" href="css/home.css">
 <section>
         <div class=" px-5 py-5 bg-dark">
           
@@ -12,10 +13,14 @@
                                     consequuntur corrupti.</li>
         
                                 <li class="list-icon">
-                                    <span class="mx-1 facebook"><i class="fa-brands fa-facebook-f"></i></span>
-                                    <span class="mx-1 twitter"> <i class="fa-brands fa-twitter"></i></span>
-                                    <span class="mx-1 instagram"><i class="fa-brands fa-instagram-square"></i></span>
-                                    <span class="mx-1 Linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+                                    <a href=""><span class="mx-1 facebook"><i class="fa-brands fa-facebook-f text-muted"></i></span></a>
+                                    <a href=""><span class="mx-1 twitter"> <i class="fa-brands fa-twitter text-muted"></i></span></a>
+                                    <a href=""><span class="mx-1 instagram"><i class="fa-brands fa-instagram-square text-muted"></i></span></a>
+                                    <a href=""><span class="mx-1 Linkedin"><i class="fa-brands fa-linkedin-in text-muted"></i></span></a>
+                                    
+                                    
+                                    
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -33,8 +38,8 @@
                     </div>
                     <div class="col-md-3 col-sm-12  py-3">
                         <div class="footer-1-text">
-                            <h2 class="text-muted">Useful Links</h2>
-                            <ul class="list-unstyled mb-5 text-muted">
+                            <h2 class="text-muted ">Useful Links</h2>
+                            <ul class="list-unstyled mb-5 text-muted ">
                                 <li>About us </li>
                                 <li>Contact-us </li>
                                 <li>Gallery</li>
@@ -56,7 +61,9 @@
                 </div>
         
         
-        
+        <hr class="text-light">
+        <h4 class="text-light text-center py-3">Created By <span style="color: #6610f2;">Tamanna Islam</span></h4>
         </div>
+
         
         </section>
