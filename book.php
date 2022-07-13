@@ -4,6 +4,15 @@ include 'config.php';
 session_start();
 $user_id = $_SESSION['user_id'];
 
+if(!isset($user_id)){
+    header("location:http://localhost/tat/login.php");
+};
+
+if(isset($_GET['logout'])){
+   unset($user_id);
+   session_destroy();
+   header("location:http://localhost/tat/index.php");
+}
 
 if(isset($_POST['submit'])){
     $name = $_POST['name'];
@@ -17,22 +26,9 @@ if(isset($_POST['submit'])){
 
     $insert =  mysqli_query($conn, "INSERT INTO book_form(name, email, phone, address, location, guests, package, price) values('{$name}','{$email}','{$phone}','{$address}','{$location}','{$guests}','{$package}','{$price}') ")or die('query failed');
     {$message[] = 'Succcessful! Please wait for our confirmation mail..';}
- 
-
-if(!isset($user_id)){
-    header("location:http://localhost/tat/login.php");
-};
-
-if(isset($_GET['logout'])){
-   unset($user_id);
-   session_destroy();
-   header("location:http://localhost/tat/index.php");
 }
 
 
-
-
-}
 
 
 ?>
@@ -54,7 +50,7 @@ if(isset($_GET['logout'])){
 
 
 </section>
-<section class=" py-5 px-5 bg-light">
+</section>
 <?php
       $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
       if(mysqli_num_rows($select) > 0){
@@ -69,12 +65,12 @@ if(isset($_GET['logout'])){
    
    ?>
 
-<form action="" method="POST" >
+<form action="" method="post" >
 
-   
+    <div class=" py-5 bg-light">
         <div class=" container ">
 
-            <div class="row py-5 pb-5">
+            <div class="row pb-5">
                 <div class="col-md-12 col-sm-12 py-3">
                     <div class="d-flex mb-4">
                         <div class=" w-50">
@@ -122,15 +118,14 @@ if(isset($_GET['logout'])){
 
 
                 </div>
-                <div class="btn1">
+            </div>
+
+            <div class="btn1">
             <input class="btn" name="submit" type="submit" value="Book Now">
             </div>
-            </div>
-
-           
 
         </div>
- 
+    </div>
 
     </form>
 
