@@ -25,7 +25,7 @@ $user_id = $_SESSION['user_id'];
 
 <body>
     <section class="Navbar">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar fixed-top ">
             <div class="container-fluid px-5">
                 <?php
          $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
@@ -41,24 +41,24 @@ $user_id = $_SESSION['user_id'];
                     <span class=" fas fa-bars"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active fw-bolder " style="color: #6610f2"
+                <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0"  >
+                        <li class="nav-item"><a class="nav-link fw-bolder"
                                 aria-current="page" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-light " aria-current="page" href="about.php">About
+                        <li class="nav-item"><a class="nav-link fw-bolder" aria-current="page" href="about.php">About
                                 us</a></li>
-                        <li class="nav-item"><a class="nav-link text-light " aria-current="page"
+                        <li class="nav-item"><a class="nav-link fw-bolder " aria-current="page"
                                 href="gallery.php">Gallery</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link text-light   " aria-current="page"
+                        <li class="nav-item"><a class="nav-link fw-bolder " aria-current="page"
                                 href="destination.php">Destination</a></li>
 
 
-                        <li class="nav-item"><a class="nav-link text-light " aria-current="page"
+                        <li class="nav-item"><a class="nav-link fw-bolder  " aria-current="page"
                                 href="contact.php">Contact
                                 us</a></li>
-                        <li class="nav-item"><a class="nav-link text-light " aria-current="page"
-                                href="deshboard.php">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bolder " aria-current="page"
+                                href="dashboard/AddDestination.php">Dashboard</a></li>
 
 
                     </ul>

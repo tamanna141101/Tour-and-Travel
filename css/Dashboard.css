@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;400&family=Rubik+Moonrocks&display=swap');
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Arima', cursive;
+    font-size: 17px;
+  }
+
+#dashboard ul {
+  padding: 0 1rem;
+}
+
+
+
+
+#dashboard .sidebar {
+  background: #090213;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+}
+
+#dashboard .sidebar .brand {
+
+
+  color: #f0e7ff;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: serif;
+  display: block;
+}
+
+#dashboard .sidebar li {
+  list-style: none;
+  margin: 10px 5px;
+  padding: 5px;
+}
+
+#dashboard .sidebar li a {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#dashboard .sidebar li a:hover {
+  color: rgb(109, 102, 209);
+
+}
+#dashboard .content {
+  width: 80%;
+  height: 100%;
+  background: #d4c5c5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#addDestination .title {
+  background: rebeccapurple;
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: serif;
+}
+
+#addDestination .product-content {
+  background-color: #fff;
+  padding: 30px 10px;
+}
+
+#addDestination input,
+#addDestination select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 3px;
+}
+
+#addDestination select {
+  padding: 12.5px;
+}
+
+#addDestination textarea {
+  width: 97.3%;
+  margin: 13px;
+}
+
+#addDestination .image-upload {
+  text-align: center;
+  border: 1px dashed #9e7f7f;
+  padding: 56px 5px;
+  margin-top: 13px;
+}
+
+#addDestination .image-upload img {
+  cursor: pointer;
+  width: auto;
+  height: 50px;
+}
+
+#addDestination .image-upload input {
+  display: none;
+}
+
+#user-list .title {
+  background: rebeccapurple;
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: serif;
+}
+
+#destination-control .title {
+  background: rebeccapurple;
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: serif;
+}
+
+#add-reviews .title {
+  background: rebeccapurple;
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: serif;
+}

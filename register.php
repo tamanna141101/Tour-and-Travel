@@ -11,10 +11,10 @@ if(isset($_POST['submit'])){
    $password = mysqli_real_escape_string($conn, md5($_POST['password']));
    $cpassword = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
 
-   $select = mysqli_query($conn, "SELECT * FROM user_form WHERE email = '$email' AND password = '$password' ") or die('query failed');
+   $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$password' ") or die('query failed');
 
    if(mysqli_num_rows($select) > 0){
-    $message[] = 'Input your Information'; }
+    $message[] = 'user already exist'; }
     else{
  if($password != $cpassword)  {
             $message[] = 'confirm password not matched!';

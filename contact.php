@@ -1,4 +1,47 @@
 
+
+
+<?php
+
+include 'config.php';
+session_start();
+$user_id = $_SESSION['user_id'];
+
+if(!isset($user_id)){
+    header("location:http://localhost/tat/login.php");
+};
+
+if(isset($_GET['logout'])){
+   unset($user_id);
+   session_destroy();
+   header("location:http://localhost/tat/index.php");
+}
+
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $msg = $_POST['msg'];
+    
+
+    $result =  mysqli_query($conn, "INSERT INTO contact(name, email, msg) values('{$name}','{$email}','{$msg}') ")or die('query failed');
+    {$message[] = 'Thank You';}
+
+
+  
+    $to_email = $_POST['email'];
+    $subject = "Thank you";
+    $body = "Hello, Sir/Maam
+    We are contacting you as soon as posible.
+    Best wishes,
+    Travel Agency";
+    $headers = "From: tamannaislam12890@gmail.com";
+    
+    mail($to_email, $subject, $body, $headers);
+     
+    }
+
+
+?>
 <!-- custom css -->
 <link rel="stylesheet" href="css/contact.css">
 <!-- bootstrap css -->
@@ -23,26 +66,40 @@
                         eaque cupiditate non odit. <br> Dolores, omnis adipisci?</p>
                 </div>
 
+                <?php
+      $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
+      if(mysqli_num_rows($select) > 0){
+         $fetch = mysqli_fetch_assoc($select);
+      }
 
-
+      if(isset($message)){
+        foreach($message as $message){
+           echo '<div class="message">'.$message.'</div>';
+        }
+     }
+   
+   ?>
+<form action="" method="post" >
 
                 <div class="row pb-5">
                     <div class="col-md-8 col-sm-12 py-3">
                         <div class="d-flex mb-4">
                             <div class=" w-50">
-                                <p class="opacity-75">Name*</p>
-                                <input class="form-control" placeholder="Your name" type="text">
+                            <label for="name">User Name: </label>
+                            <input class="form-control" Value="<?php echo $fetch['name']; ?>" type="text" id="name" name="name">
                             </div>
                             <div class=" mx-3 w-50">
-                                <p class="opacity-75">Email*</p>
-                                <input class="form-control" placeholder="Your email" type="email">
+                            <label for="email">Email: </label>
+                            <input class="form-control" Value="<?php echo $fetch['email']; ?>" type="text" id="email" name="email">
                             </div>
                         </div>
-                        <p class="opacity-75">Massage*</p>
-                        <textarea placeholder="Your massage" class=" form-control " name="" id="" cols="3"
+                        
+                            <label for="msg">Massage: </label>
+                        <textarea placeholder="Your massage" class=" form-control " name="msg" id="msg" cols="3"
                             rows="3"></textarea>
-                        <a class="btn  mt-3" style="background: #6610f2; color: white;" href="">sent massage <span><i
-                                    class="fa-solid fa-rocket"></i></span></a>
+                            <div class="btn1">
+            <input class="btn" name="submit" type="submit" value="Sent Massage">
+            </div>
                     </div>
                     <div class="col-md-4 col-sm-12 d-flex justify-content-center  flex-column py-3">
                         <p class="opacity-75"> <span><i class="fa-solid fa-envelope"></i></span> : travel@gamil.com
@@ -56,7 +113,7 @@
 
                     </div>
                 </div>
-
+                </form>
 
             </div>
         </div>

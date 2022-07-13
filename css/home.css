@@ -41,6 +41,16 @@
     padding: 8px;
     border-radius: 15px;
    }
+
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(78, 35, 235);
+ 
+}
   
    .user .fa-solid{
     color: white;
