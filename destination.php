@@ -1,3 +1,11 @@
+<?php
+
+include 'config.php';
+session_start();
+$user_id = $_SESSION['user_id'];
+
+?>
+
 <!-- custom css -->
 <link rel="stylesheet" href="css/destination.css">
 <!-- bootstrap css -->
@@ -16,17 +24,32 @@
 <section>
     <div id="booking">
 
+    <?php 
+			
+			$insert =  mysqli_query($conn, "SELECT * FROM Add_destination");
+			
+			if (mysqli_num_rows($insert) > 0) {
+				while ($row = mysqli_fetch_assoc($insert)) {
 
+			?>
         <div class="card" style="width: 18rem;">
-            <img src="https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=600"
+            <img src="dashboard/upload_image/<?php echo $row['image']; ?>"
                 class="card-img-top" alt="...">
             <div class="card-body">
-                <h3 class="card-title">Paris</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, excepturi!</p>
-                <p class="card-text fs-5">3 days & 2 night <br> From<span class="text-danger fw-bold">$350.00</p>
-                <a href="book.php"><button class="btn">Book Now</button></a>
+           
+                <h3 class="card-title"><?php echo $row['destination']; ?></h3>
+                <p><?php echo $row['description']; ?></p>
+                <p class="card-text fs-5"><?php echo $row['package']; ?><br> From<span class="text-danger fw-bold"><?php echo $row['price']; ?></p>
+                <a href="book.php?id=<?php echo $row['d_id'];?>"><button class="btn">Book Now</button></a>
             </div>
         </div>
+
+        <?php
+
+				}
+			}
+			
+			?>
 
     </div>
 </section>
@@ -36,3 +59,4 @@
     ?>
 
 <script src="js/bootstrap.min.js"></script>
+

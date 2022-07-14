@@ -86,11 +86,11 @@ if(isset ($_POST['submit'])){
                                     <div class="col-sm-12 col-md-4">
                                         <label for="destination">Destinations:</label>
                                         <select name="destination">
-                                            <option value="germany">Germany</option>
-                                            <option value="japan">Japan</option>
-                                            <option value="thailand">Thailand</option>
-                                            <option value="mexico">Mexico</option>
-                                            <option value="indonesia">Indonesia</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Thailand">Thailand</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="Indonesia">Indonesia</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-12 col-md-4">

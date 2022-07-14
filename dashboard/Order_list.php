@@ -1,5 +1,4 @@
-
-    
+   
     <?php
 $conn = mysqli_connect('localhost','root','','travel') or die('connection failed');
 session_start();
@@ -48,13 +47,12 @@ if(mysqli_num_rows($result)>0){
         <thead>
         <th>Id</th>
         <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
+        
         <th>location</th>
         <th>Guests</th>
         <th>Packages</th>
         <th>Price</th>
-        <th>Action</th>
+       
         </thead>
         <tbody>
              <?php while ($row=mysqli_fetch_assoc($result))
@@ -64,19 +62,13 @@ if(mysqli_num_rows($result)>0){
             <tr>
                 <td><?php echo $row['id'];?></td>
                 <td><?php echo $row['name'];?></td>
-                <td><?php echo $row['email'];?></td>
-                <td><?php echo $row['phone'];?></td>
                 <td><?php echo $row['location'];?></td>
                 <td><?php echo $row['guests'];?></td>
                 <td><?php echo $row['package'];?></td>
                 <td><?php echo $row['price'];?></td>
                 
 
-                <td>
-                   <input type="submit" name="submit" id="btn" value="Confrim">
-                   <input type="submit" name="submit" id="btn1" value="Reject">
-                    <a href='delete-inline.php?id=<?php echo $row['id'];?>' onclick="return checkDelete()"  class="btn3">Delete</a>
-                </td>
+               
             </tr>
             <?php } ?>
         </tbody>
@@ -96,3 +88,4 @@ if(mysqli_num_rows($result)>0){
         
     }
     </script>
+n>

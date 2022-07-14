@@ -30,10 +30,11 @@
 
 
 #booking {
+ width: 100%;
     padding: 30px;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     background-color: rgb(90, 61, 61);
     
   }
