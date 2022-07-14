@@ -42,9 +42,9 @@ $user_id = $_SESSION['user_id'];
                 </button>
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent ">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0"  >
-                        <li class="nav-item"><a class="nav-link fw-bolder"
-                                aria-current="page" href="index.php">Home</a></li>
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-bolder" aria-current="page" href="index.php">Home</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link fw-bolder" aria-current="page" href="about.php">About
                                 us</a></li>
                         <li class="nav-item"><a class="nav-link fw-bolder " aria-current="page"
@@ -86,20 +86,19 @@ $user_id = $_SESSION['user_id'];
     </section>
 
     <script>
-        let user = "<?php echo $fetch['name']; ?>";
-        console.log(user);
+    let user = "<?php echo $fetch['name']; ?>";
+    console.log(user);
 
 
-        if(user){
-            document.getElementById("logout").style.display = "block";
-            document.getElementById("account").style.display = "block";
-            document.getElementById("login").style.display = "none";
-        }
-        else{
-            document.getElementById("logout").style.display = "none";
-            document.getElementById("account").style.display = "none";
-            document.getElementById("login").style.display = "block";
-        }
+    if (user) {
+        document.getElementById("logout").style.display = "block";
+        document.getElementById("account").style.display = "block";
+        document.getElementById("login").style.display = "none";
+    } else {
+        document.getElementById("logout").style.display = "none";
+        document.getElementById("account").style.display = "none";
+        document.getElementById("login").style.display = "block";
+    }
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/home.js"></script>

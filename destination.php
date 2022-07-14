@@ -1,8 +1,7 @@
 <?php
 
 include 'config.php';
-session_start();
-$user_id = $_SESSION['user_id'];
+
 
 ?>
 
@@ -24,7 +23,7 @@ $user_id = $_SESSION['user_id'];
 <section>
     <div id="booking">
 
-    <?php 
+        <?php 
 			
 			$insert =  mysqli_query($conn, "SELECT * FROM Add_destination");
 			
@@ -33,13 +32,14 @@ $user_id = $_SESSION['user_id'];
 
 			?>
         <div class="card" style="width: 18rem;">
-            <img src="dashboard/upload_image/<?php echo $row['image']; ?>"
-                class="card-img-top" alt="...">
+            <img src="dashboard/upload_image/<?php echo $row['image']; ?>" style=" height:200px;" class="card-img-top"
+                alt="...">
             <div class="card-body">
-           
+
                 <h3 class="card-title"><?php echo $row['destination']; ?></h3>
                 <p><?php echo $row['description']; ?></p>
-                <p class="card-text fs-5"><?php echo $row['package']; ?><br> From<span class="text-danger fw-bold"><?php echo $row['price']; ?></p>
+                <p class="card-text fs-5"><?php echo $row['package']; ?><br> From<span
+                        class="text-danger fw-bold"><?php echo $row['price']; ?></p>
                 <a href="book.php?id=<?php echo $row['d_id'];?>"><button class="btn">Book Now</button></a>
             </div>
         </div>
@@ -59,4 +59,3 @@ $user_id = $_SESSION['user_id'];
     ?>
 
 <script src="js/bootstrap.min.js"></script>
-

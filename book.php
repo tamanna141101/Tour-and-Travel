@@ -14,7 +14,7 @@ if(isset($_GET['logout'])){
    header("location:http://localhost/tat/index.php");
 }
 
-
+// insert Booking Information
 
 if(isset($_POST['submit'])){
     $name = $_POST['name'];
@@ -63,6 +63,8 @@ if(isset($_POST['submit'])){
    ?>
 
 <?php
+
+//GET ID from destination.php and Add_destination database table
 $d_id=$_GET['id'];
       $select = mysqli_query($conn, "SELECT * FROM Add_destination WHERE d_id = '$d_id'") or die('query failed');
       if(mysqli_num_rows($select) > 0){
@@ -70,9 +72,9 @@ $d_id=$_GET['id'];
       }
    
    ?>
-   
-   
-<form action="" method="post" >
+
+
+<form action="" method="post">
 
     <div class=" py-5 bg-light">
         <div class=" container ">
@@ -81,45 +83,49 @@ $d_id=$_GET['id'];
                 <div class="col-md-12 col-sm-12 py-3">
                     <div class="d-flex mb-4">
                         <div class=" w-50">
-                        <label for="name">User Name: </label>
+                            <label for="name">User Name: </label>
                             <input class="form-control" placeholder="Your Name:" type="text" id="name" name="name">
                         </div>
                         <div class=" mx-3 w-50">
-                        <label for="email">Email: </label>
+                            <label for="email">Email: </label>
                             <input class="form-control" placeholder="Your Email:" type="text" id="email" name="email">
                         </div>
                     </div>
 
                     <div class="d-flex mb-4">
                         <div class=" w-50">
-                        <label for="phone">Phone: </label>
-                            <input class="form-control" placeholder="Your phone Name" type="text" id="phone" name="phone">
+                            <label for="phone">Phone: </label>
+                            <input class="form-control" placeholder="Your phone Name" type="text" id="phone"
+                                name="phone">
                         </div>
                         <div class=" mx-3 w-50">
-                        <label for="address">Address: </label>
+                            <label for="address">Address: </label>
                             <input class="form-control" placeholder="your address" type="text" id="text" name="address">
                         </div>
                     </div>
 
                     <div class="d-flex mb-4">
                         <div class=" w-50">
-                        <label for="location">Where to: </label>
-                            <input class="form-control" value="<?php echo $fetch['destination']; ?>" type="text" name="location" onclick="myFunction2()" id="location">
+                            <label for="location">Where to: </label>
+                            <input class="form-control" value="<?php echo $fetch['destination']; ?>" type="text"
+                                name="location" onclick="myFunction2()" id="location">
                         </div>
                         <div class=" mx-3 w-50">
-                        <label for="email">How many: </label>
+                            <label for="email">How many: </label>
                             <input class="form-control" placeholder="number of guests" type="number" name="guests">
                         </div>
                     </div>
 
                     <div class="d-flex mb-4">
                         <div class=" w-50">
-                        <label for="package">Package: </label>
-                            <input class="form-control" type="text" name="package" value="<?php echo $fetch['package']; ?>" onclick="myFunction()" id="package">
+                            <label for="package">Package: </label>
+                            <input class="form-control" type="text" name="package"
+                                value="<?php echo $fetch['package']; ?>" onclick="myFunction()" id="package">
                         </div>
                         <div class=" mx-3 w-50">
-                        <label for="price">Price: </label>
-                            <input class="form-control" type="text" name="price" value="<?php echo $fetch['price']; ?>" onclick="myFunction1()" id="price">
+                            <label for="price">Price: </label>
+                            <input class="form-control" type="text" name="price" value="<?php echo $fetch['price']; ?>"
+                                onclick="myFunction1()" id="price">
                         </div>
                     </div>
 
@@ -128,33 +134,33 @@ $d_id=$_GET['id'];
             </div>
 
             <div class="btn1">
-            <input class="btn" name="submit" type="submit" value="Book Now">
+                <input class="btn" name="submit" type="submit" value="Book Now">
             </div>
 
         </div>
     </div>
 
-    </form>
+</form>
 
-    </section>
+</section>
 
-    <?php
+<?php
     @include 'footer.php';
     ?>
 
 
 <script>
-    function myFunction() {
-  document.getElementById("package").readOnly = true;
+function myFunction() {
+    document.getElementById("package").readOnly = true;
 }
 
 
 function myFunction1() {
-  document.getElementById("price").readOnly = true;
+    document.getElementById("price").readOnly = true;
 }
 
 
 function myFunction2() {
-  document.getElementById("location").readOnly = true;
+    document.getElementById("location").readOnly = true;
 }
 </script>

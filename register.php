@@ -38,19 +38,19 @@ if(isset($_POST['submit'])){
 <link rel="stylesheet" href="css/register.css">
 
 <section id="head">
-    
+
 
     <div class="form">
         <h2>Register Now</h2>
         <form action="" method="POST" onsubmit="return validate()">
 
-        <?php
+            <?php
       if(isset($message)){
          foreach($message as $message){
             echo '<div class="message">'.$message.'</div>';
          }
       }
-      ?> 
+      ?>
             <!-- start of a form. after submission the destination page link in written inside 'action' attribute.
                 there are two types of methods mainly.
                 1) get(by default): all the values giver by user are showed in the url.  

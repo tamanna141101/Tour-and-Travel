@@ -32,11 +32,8 @@ if(isset($_GET['logout'])){
                 <div id="destination-control">
                     <div class="container">
                         <h6 class="title">Contact List</h6>
-                    </div>
-                </div>
 
-               
-    <?php
+                        <?php
 
 
 $result=mysqli_query($conn,"SELECT * FROM contact") or die ("Queary failed");
@@ -67,6 +64,12 @@ if(mysqli_num_rows($result)>0){
             <?php } ?>
         </tbody>
     </table>
+
+                    </div>
+                </div>
+
+               
+   
 
     <?php
  } 
