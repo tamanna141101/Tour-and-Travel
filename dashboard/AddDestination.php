@@ -15,33 +15,37 @@ if(isset($_GET['logout'])){
 
 
 
-if(isset($_POST['submit']) AND ($_FILES['imagename']) ){
+if(isset ($_POST['submit'])){
     $destination = $_POST['destination'];
     $price = $_POST['price'];
     $package = $_POST['package'];
     $description = $_POST['description'];
-
-    $image = $_FILES['imagename']['name'];  
-    $image_tmp_name = $_FILES['imagename']['tmp_name'];
+    $image = $_FILES['image']['name'];  
+    $image_size = $_FILES['image']['size'];
+    $image_tmp_name = $_FILES['image']['tmp_name'];
     $image_folder = 'upload_image/'. $image;
 
 
-    // if($image_size > 2000000){
-    //     $message[] = 'image size is too large!';
-    //  }else{
+    if($image_size > 2000000){
+        $message[] = 'image size is too large!';
+     }else{
     $insert =  mysqli_query($conn, "INSERT INTO Add_destination(destination, price, package, description, image) values('{$destination}','{$price}','{$package}','{$description}','{$image}') ")or die('query failed');
-    {$message[] = 'Succcessful!';}
+    
 
-   
+    if($insert){
         move_uploaded_file($image_tmp_name, $image_folder);
-        $message[] = 'registered successfully!';
+        $message[] = 'Destination Add successfully!';
+       
+
+     }else{
+        $message[] = 'registeration failed!';
+     }
         // header('location: http://localhost/tat/destination.php');
-    }
-   
+     
 
+}
 
-
-
+}
 
 
 
@@ -77,7 +81,7 @@ if(isset($_POST['submit']) AND ($_FILES['imagename']) ){
    ?>
 
                         <div class="product-content">
-                            <form action="" method="POST">
+                            <form action="" method="POST" enctype = "multipart/form-data">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-4">
                                         <label for="destination">Destinations:</label>
@@ -117,11 +121,11 @@ if(isset($_POST['submit']) AND ($_FILES['imagename']) ){
                                                 <h5>Upload photo</h5>
                                             </label>
         
-                                            <input name="imagename"  id="file-input" type="file" accept="image/jpg, image/jpeg, image/png" >
+                                            <input  id="file-input" type="file" name="image" accept="image/jpg, image/jpeg, image/png">
                                         </div>
                                     </div>
                                 </div>
-                                <input style = "background:darkgray"  name="submit" class='mt-5 text-white bg-darkgray' type="submit" value="Submit" />
+                                <input style = "background:darkgray"  name="submit" class='mt-5 text-white bg-darkgray' type="submit" value="Submit">
                             </form>
         
                         </div>
