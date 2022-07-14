@@ -8,7 +8,15 @@
     font-family: 'Arima', cursive;
     font-size: 17px;
   }
-
+  .message {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(17, 196, 121);
+    color: white;
+    font-size: 20px;
+}
 #dashboard ul {
   padding: 0 1rem;
 }
@@ -102,7 +110,7 @@
 }
 
 #addDestination .image-upload input {
-  display: none;
+  display: block;
 }
 
 #user-list .title {

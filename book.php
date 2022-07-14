@@ -97,7 +97,7 @@ if(isset($_POST['submit'])){
                     <div class="d-flex mb-4">
                         <div class=" w-50">
                         <label for="location">Where to: </label>
-                            <input class="form-control" placeholder="place you want to visit" type="text" name="location">
+                            <input class="form-control" value="paris" type="text" name="location" onclick="myFunction2()" id="location">
                         </div>
                         <div class=" mx-3 w-50">
                         <label for="email">How many: </label>
@@ -108,11 +108,11 @@ if(isset($_POST['submit'])){
                     <div class="d-flex mb-4">
                         <div class=" w-50">
                         <label for="package">Package: </label>
-                            <input class="form-control" type="text" name="package">
+                            <input class="form-control" type="text" name="package" value="packge" onclick="myFunction()" id="package">
                         </div>
                         <div class=" mx-3 w-50">
                         <label for="price">Price: </label>
-                            <input class="form-control" type="text" name="price">
+                            <input class="form-control" type="text" name="price" value="price" onclick="myFunction1()" id="price">
                         </div>
                     </div>
 
@@ -134,3 +134,20 @@ if(isset($_POST['submit'])){
     <?php
     @include 'footer.php';
     ?>
+
+
+<script>
+    function myFunction() {
+  document.getElementById("package").readOnly = true;
+}
+
+
+function myFunction1() {
+  document.getElementById("price").readOnly = true;
+}
+
+
+function myFunction2() {
+  document.getElementById("location").readOnly = true;
+}
+</script>

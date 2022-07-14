@@ -22,6 +22,7 @@
                 class="card-img-top" alt="...">
             <div class="card-body">
                 <h3 class="card-title">Paris</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, excepturi!</p>
                 <p class="card-text fs-5">3 days & 2 night <br> From<span class="text-danger fw-bold">$350.00</p>
                 <a href="book.php"><button class="btn">Book Now</button></a>
             </div>

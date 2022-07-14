@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
                         <div class="d-flex mb-4">
                             <div class=" w-50">
                             <label for="name">User Name: </label>
-                            <input class="form-control" Value="<?php echo $fetch['name']; ?>" type="text" id="name" name="name">
+                            <input class="form-control" Value="<?php echo $fetch['name']; ?>" type="text" id="name" name="name" >
                             </div>
                             <div class=" mx-3 w-50">
                             <label for="email">Email: </label>
@@ -123,5 +123,7 @@ if(isset($_POST['submit'])){
     <?php
     @include 'footer.php';
     ?>
+
+
 
     <script src="js/bootstrap.min.js"></script>
