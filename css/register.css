@@ -35,7 +35,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	width: 500px;
+	width: 600px;
 	padding: 20px;
 	background: rgba(0,0,0,.4);
 	box-sizing: border-box;
@@ -60,7 +60,7 @@
   }
   .form .inputBox input{
    position: relative;
-	padding: 10px 15px;
+	padding: 10px 40px;
 	font-size: 18px;
 	color: #FFF;
 	letter-spacing: 1px;

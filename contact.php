@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
     $to_email = $_POST['email'];
     $subject = "Thank you";
     $body = "Hello, Sir/Maam
-    We are contacting you as soon as posible.
+    We are contacting you as soon as possible.
     Best wishes,
     Travel Agency";
     $headers = "From: tamannaislam12890@gmail.com";

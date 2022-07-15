@@ -51,17 +51,12 @@ if(isset($_POST['submit'])){
          }
       }
       ?>
-            <!-- start of a form. after submission the destination page link in written inside 'action' attribute.
-                there are two types of methods mainly.
-                1) get(by default): all the values giver by user are showed in the url.  
-                2) post: all the values giver by user are not showed in the url.   -->
             <div class="inputBox">
                 <label for="name">User Name: </label>
                 <input type="text" id="name" name="name" autocomplete="off" class="input">
                 <br>
                 <span id="nameError" class="errors"></span>
-                <!-- takes text type input -->
-                <!-- 'name' is used to send the value to backend. 'autocomplete=off' is used to stop showing previous values. if user doesn't fill any value then the value inside 'value' attribute comes in action -->
+               
             </div>
 
 
