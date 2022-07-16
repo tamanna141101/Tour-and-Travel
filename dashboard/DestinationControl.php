@@ -35,20 +35,18 @@ if(isset($_GET['logout'])){
                     <?php
 
 
-$result=mysqli_query($conn,"SELECT * FROM book_form") or die ("Queary failed");
+$result=mysqli_query($conn,"SELECT * FROM Add_destination") or die ("Queary failed");
 if(mysqli_num_rows($result)>0){
 
     ?>
                     <table cellpadding="7px" id="customers">
                         <thead>
                             <th>Id</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>location</th>
-                            <th>Guests</th>
-                            <th>Packages</th>
-                            <th>Price</th>
+                            <th>Location</th>
+                            <th>Price</th>         
+                            <th>Package</th>
+                            <th>Description</th>
+                            <th>image</th>     
                             <th>Action</th>
                         </thead>
                         <tbody>
@@ -57,20 +55,19 @@ if(mysqli_num_rows($result)>0){
 
             ?>
                             <tr>
-                                <td><?php echo $row['id'];?></td>
-                                <td><?php echo $row['name'];?></td>
-                                <td><?php echo $row['email'];?></td>
-                                <td><?php echo $row['phone'];?></td>
-                                <td><?php echo $row['location'];?></td>
-                                <td><?php echo $row['guests'];?></td>
-                                <td><?php echo $row['package'];?></td>
+                                <td><?php echo $row['d_id'];?></td>
+                                <td><?php echo $row['destination'];?></td>
                                 <td><?php echo $row['price'];?></td>
+                                <td><?php echo $row['package'];?></td>
+                                <td style=" width: 40%;"><?php echo $row['description'];?></td>
+                                <td><img src="upload_image/<?php echo $row['image']; ?>" style=" height:100px;" class="card-img-top"
+                alt="..."></td>
+                               
 
 
                                 <td>
-                                    <input type="submit" name="submit" id="btn" value="Confrim">
-                                    <input type="submit" name="submit" id="btn1" value="Reject">
-                                    <a href='delete-inline.php?id=<?php echo $row['id'];?>'
+                                    <input type="submit" name="submit" id="btn" value="Edit"> 
+                                    <a href='destination_delete-inline.php?id=<?php echo $row['d_id'];?>'
                                         onclick="return checkDelete()" class="btn3">Delete</a>
                                 </td>
                             </tr>

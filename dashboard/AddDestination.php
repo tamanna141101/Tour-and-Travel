@@ -86,7 +86,10 @@ if(isset ($_POST['submit'])){
                                         <option value="Japan">Japan</option>
                                         <option value="Thailand">Thailand</option>
                                         <option value="Mexico">Mexico</option>
-                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="America">America</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Nepal">Nepal</option>
+                                        
                                     </select>
                                 </div>
                                 <div class="col-sm-12 col-md-4">
@@ -113,12 +116,12 @@ if(isset ($_POST['submit'])){
                                     <label htmlFor="UploadPhoto">Upload Photo</label>
                                     <div class="image-upload">
                                         <label for="file-input">
-                                            <img src="../image/folderImage.png" alt="Image">
+                                        <input id="file-input" type="file" name="image"
+                                            accept="image/jpg, image/jpeg, image/png"><img src="../image/folderImage.png" alt="Image">
                                             <h5>Upload photo</h5>
                                         </label>
 
-                                        <input id="file-input" type="file" name="image"
-                                            accept="image/jpg, image/jpeg, image/png">
+                                        
                                     </div>
                                 </div>
                             </div>
