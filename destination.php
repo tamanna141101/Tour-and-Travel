@@ -44,6 +44,7 @@ include 'config.php';
             </div>
         </div>
 
+        
         <?php
 
 				}
@@ -59,6 +60,3 @@ include 'config.php';
     ?>
 
 <script src="js/bootstrap.min.js"></script>
-
-
-

@@ -1,12 +1,12 @@
 function validate() {
-    var errors=document.getElementsByClassName('errors');
-    for(let item of errors)
-    item.innerHTML="";
+    var errors = document.getElementsByClassName('errors');
+    for (let item of errors)
+        item.innerHTML = "";
 
     var check = 0;
-    
 
-   
+
+
     var email = document.getElementById('email').value.trim();
 
     if (email.length == 0) {
@@ -33,19 +33,19 @@ function validate() {
         document.getElementById('passwordError').innerHTML = "Input Your password";
         check = 1;
     }
-   
 
 
-    if(check==1)
-    return false;
+
+    if (check == 1)
+        return false;
 
 }
 
 function myFunction() {
     var x = document.getElementById("password");
     if (x.type === "password") {
-      x.type = "text";
+        x.type = "text";
     } else {
-      x.type = "password";
+        x.type = "password";
     }
-  }
+}

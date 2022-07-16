@@ -70,7 +70,7 @@ if(mysqli_num_rows($result)>0){
                                 <td>
                                     <input type="submit" name="submit" id="btn" value="Confrim">
                                     <input type="submit" name="submit" id="btn1" value="Reject">
-                                    
+
                                 </td>
                             </tr>
                             <?php } ?>

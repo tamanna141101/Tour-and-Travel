@@ -13,7 +13,7 @@
     <a class="brand" href="../index.php"><i class="fa-solid fa-house-user text-center mt-5 mx-5"></i></a>
     <ul>
         <li>
-            <a href="AddDestination.php">Add Destination</a>
+             <a href="AddDestination.php">Add Destination</a>
         </li>
         <li>
             <a href="DestinationControl.php">Destination Control</a>

@@ -1,99 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;400&family=Rubik+Moonrocks&display=swap');
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arima', cursive;
-    font-size: 15px;
-   
-     
-  }
-  #head{
-    background-image: linear-gradient(to bottom right, rgb(255, 0, 64), rgb(199, 93, 231), rgb(139, 139, 219) ,rgb(199, 93, 231) ,rgb(255, 0, 64));
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
-    height: 100vh;
-  }
-  
-
-  .form{
-    position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 450px;
-	padding: 20px;
-	background: rgba(0,0,0,.4);
-	box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0,0,0,.5);
-	border-radius: 10px;
-  }
-
-  .form h2{
-    margin: 0 0 5px;
-	padding: 0;
-	color: #FFF;
-	text-align: center;
-  }
-
-  .form p{
-    color: #FFF;
-    text-align: center;
-  }
-  
-  
-  
-
-  .form .error_text{
-    color: rgb(255, 255, 255);
-    background-color: rgb(214, 149, 171);
-    border: 1px solid palevioletred;
-    margin:10px 70px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  .submit{
-    text-align: center;
-    margin-top: 10px;
-  }
-  .form .btn{
-    color: #FFF;
-    padding: 7px;
-    border: 1px solid #FFF;
-    background: transparent;
-    border-radius: 30px;
-  }
-  .form .btn:hover{
-    color: black;
-    background: aqua;
-  }
-  .fields-input {
-    display: flex;
-    text-align: center;
-    padding-left: 22%;
-
-  }
-  .fields-input  input{
-    position: relative;
-     padding: 10px 5px;
-     color: #FFF;
-     width: 50px;
-     border: 1px solid #FFF;
-     text-align: center;
-     background: transparent;
-     margin: 4px;
-   }
-
-   .otp_field::-webkit-inner-spin-button,
-   .otp_field::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-   }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arima', cursive;
+  font-size: 15px;
 
 
- 
-  
+}
+
+#head {
+  background-image: linear-gradient(to bottom right, rgb(255, 0, 64), rgb(199, 93, 231), rgb(139, 139, 219), rgb(199, 93, 231), rgb(255, 0, 64));
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  height: 100vh;
+}
+
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  padding: 20px;
+  background: rgba(0, 0, 0, .4);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+  border-radius: 10px;
+}
+
+.form h2 {
+  margin: 0 0 5px;
+  padding: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+.form p {
+  color: #FFF;
+  text-align: center;
+}
+
+
+
+
+.form .error_text {
+  color: rgb(255, 255, 255);
+  background-color: rgb(214, 149, 171);
+  border: 1px solid palevioletred;
+  margin: 10px 70px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form .btn {
+  color: #FFF;
+  padding: 7px;
+  border: 1px solid #FFF;
+  background: transparent;
+  border-radius: 30px;
+}
+
+.form .btn:hover {
+  color: black;
+  background: aqua;
+}
+
+.fields-input {
+  display: flex;
+  text-align: center;
+  padding-left: 22%;
+
+}
+
+.fields-input input {
+  position: relative;
+  padding: 10px 5px;
+  color: #FFF;
+  width: 50px;
+  border: 1px solid #FFF;
+  text-align: center;
+  background: transparent;
+  margin: 4px;
+}
+
+
+.otp_field::-webkit-inner-spin-button,
+.otp_field::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

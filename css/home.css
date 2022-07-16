@@ -1,18 +1,17 @@
-
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;400&family=Rubik+Moonrocks&display=swap');
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    font-family: 'Arima', cursive;
-    font-size: 17px;
-  }
+body {
+  margin: 0;
+  font-family: 'Arima', cursive;
+  font-size: 17px;
+}
 
-  /* Style the buttons */
+/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -29,112 +28,118 @@
   background-color: #666;
   color: white;
 }
-/* navbar */
-  nav{
-    background: hsla(248, 100%, 2%, 0.5);
-  }
 
-   .nav-item button{
-    border: none;
-    background-color: aqua;
-    color: #fff;
-    padding: 8px;
-    border-radius: 15px;
-   }
+/* navbar */
+nav {
+  background: hsla(248, 100%, 2%, 0.5);
+}
+
+.nav-item button {
+  border: none;
+  background-color: aqua;
+  color: #fff;
+  padding: 8px;
+  border-radius: 15px;
+}
 
 
 .navbar-nav .nav-link {
-    color: white;
+  color: white;
 }
 
 .navbar-nav .nav-link:hover {
   color: rgb(78, 35, 235);
- 
+
 }
-  
-   .user .fa-solid{
-    color: white;
-    padding-right: 60px;
-   }
 
-   .dropdown {
-    position: relative;
-    display: inline-block;
-    
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    border-radius: 5px;
-    
-  }
+.user .fa-solid {
+  color: white;
+  padding-right: 60px;
+}
 
-  .dropdown-content a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
 
-  .wel_log{
-    display: flex;
-    color: #fff;
-  }
-  .welcome{
-   margin-right: 10px;
-  }
+}
 
-  #myVideo {
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.wel_log {
+  display: flex;
+  color: #fff;
+}
+
+.welcome {
+  margin-right: 10px;
+}
+
+#myVideo {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -1;
   min-height: 100%;
-  min-width:100%;
+  min-width: 100%;
   object-fit: cover;
-    
-  }
-  .anim { 
-    bottom: 0;
-    background: hsla(246, 43%, 18%, 0.5);
-    color: #ffffff;
-    width: 100%;
-    height: 100vh;
-    padding: 150px 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-  }
-  .anim h4{
-    font-size: 35px;
-    font-weight: 200;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 2px rgb(235, 12, 23);
-    
+
 }
-.anim h2{
-    margin: 30px 0 20px 0;
-    font-size: 55px;
-    font-weight: 700;
-    text-shadow: 2px 1px 5px rgb(228, 11, 11);
-   
+
+.anim {
+  bottom: 0;
+  background: hsla(246, 43%, 18%, 0.5);
+  color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  padding: 150px 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
+
+.anim h4 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px rgb(235, 12, 23);
+
+}
+
+.anim h2 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px rgb(228, 11, 11);
+
+}
+
 /*  */
-.form_edit{
+.form_edit {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   margin: 100px 150px;
   border-radius: 1rem;
-  
+
 }
 
 
@@ -143,39 +148,56 @@
 /*  */
 
 
-.change_contentone:after{
-    content: '';
-    animation: changetextone 10s infinite linear;
+.change_contentone:after {
+  content: '';
+  animation: changetextone 10s infinite linear;
 
 }
 
 @keyframes changetextone {
-    
-    0%{content:"Amazing Places";} 
-    50%{content:"Feel Free To Travel";}
-    100%{content:"Trip For Your Kids";}
-   
 
-    
+  0% {
+    content: "Amazing Places";
+  }
+
+  50% {
+    content: "Feel Free To Travel";
+  }
+
+  100% {
+    content: "Trip For Your Kids";
+  }
+
+
+
 }
-.change_content_two:after{
-    content: '';
-    animation: changetext 10s infinite linear;
+
+.change_content_two:after {
+  content: '';
+  animation: changetext 10s infinite linear;
 
 }
 
 @keyframes changetext {
-    
-    0%{content:"Explore Your Life Travel Where You Want";} 
-    50%{content:"Make you Free to travel with us";}
-    100%{content:"Sensation Ice Trip is Coming For Kidsr";}
-   
 
-    
+  0% {
+    content: "Explore Your Life Travel Where You Want";
+  }
+
+  50% {
+    content: "Make you Free to travel with us";
+  }
+
+  100% {
+    content: "Sensation Ice Trip is Coming For Kidsr";
+  }
+
+
+
 }
 
- /* Boxes */
- .boxes {
+/* Boxes */
+.boxes {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -186,46 +208,48 @@
   background: #312f38;
   text-align: center;
   padding: 1.5rem 2rem;
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  ;
 }
 
- /* Info */
- .info {
+/* Info */
+.info {
   display: flex;
   padding: 3rem;
 }
-.image{
+
+.image {
   width: 50%;
   padding: 50px;
 }
 
-.experience{
+.experience {
   width: 50%;
   padding: 50px;
   text-align: justify;
 }
 
-.info img{
+.info img {
   width: 100%;
   border-left: 10px solid blue;
   border-radius: 15px;
- 
+
 }
 
-.image:hover img{
+.image:hover img {
   box-shadow: 10px 10px 10px 10px gray;
 }
 
 
-  .info .btn {
-    display: block;
-    text-align: center;
-    margin: auto;
-  }
- 
+.info .btn {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
 
- /*  */
- .filterDiv {
+
+/*  */
+.filterDiv {
   float: left;
   margin-top: 2px;
   display: none;
@@ -238,56 +262,58 @@
 
 
 
- .top_deal {
+.top_deal {
   /* The image used */
   background-image: url('https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 
   /* Full height */
-  height: auto; 
-  
+  height: auto;
+
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- }
+}
 
- @media only screen and (max-width: 600px) {
-  .top_deal{
+@media only screen and (max-width: 600px) {
+  .top_deal {
     height: 145vh;
   }
 }
 
 .fa-solid {
   color: orange;
- }
+}
 
- .card{
+.card {
   margin: 0 10px;
- }
+}
 
- .card-body p{
+.card-body p {
   color: rgb(138, 124, 124);
- }
- .card-body hr{
+}
+
+.card-body hr {
   color: rgb(95, 83, 83);
- }
- 
- 
- /* fav destination */
- #favourite-destination .card {
+}
+
+
+/* fav destination */
+#favourite-destination .card {
   background-color: rgb(255, 242, 244);
- }
- /* sweper js */
+}
 
- html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+/* sweper js */
 
-      .home_s_card{
-        font-size: 12px;
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 
-      }
+.home_s_card {
+  font-size: 12px;
+
+}

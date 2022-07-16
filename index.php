@@ -60,6 +60,7 @@
         <h3>Air Ticketing</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
     </div>
+    
     <div class="box">
         <i class="fas fa-hotel fa-4x"></i>
         <h3>Hotel Services</h3>

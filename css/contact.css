@@ -1,45 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;400&family=Rubik+Moonrocks&display=swap');
+
 * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: 'Arima', cursive;
-    font-size: 17px;
-  }
-
-
-#header { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
- 
-  }
-  
-  .content{
-    color: aliceblue;
-    padding: 150px;
-    text-align: center;
+  box-sizing: border-box;
 }
 
-.content h1{
-    font-size: 60px;
+body {
+  margin: 0;
+  font-family: 'Arima', cursive;
+  font-size: 17px;
 }
-.btn1{
+
+
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+
+}
+
+.content {
+  color: aliceblue;
+  padding: 150px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 60px;
+}
+
+.btn1 {
   text-align: center;
   margin-top: 10px;
 }
 
-.btn1 input{
-  
+.btn1 input {
+
   text-align: center;
   border-radius: 50px;
   background-color: rgb(0, 0, 0);
   color: aliceblue;
   padding: 10px 10px;
-  
+
 }
 
 .message {

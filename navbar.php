@@ -86,6 +86,7 @@ $user_id = $_SESSION['user_id'];
     </section>
 
     <script>
+        
     let user = "<?php echo $fetch['name']; ?>";
     console.log(user);
 

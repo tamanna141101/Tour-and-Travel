@@ -66,7 +66,6 @@ if(mysqli_num_rows($result)>0){
             </div>
 
 
-
             <?php
  } 
  mysqli_close($conn);

@@ -75,7 +75,6 @@ $d_id=$_GET['id'];
 
 
 <form action="" method="post">
-
     <div class=" py-5 bg-light">
         <div class=" container ">
 

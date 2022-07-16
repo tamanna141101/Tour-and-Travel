@@ -30,7 +30,6 @@ if(isset($_POST['submit'])){
     }
 
 
-
    
    ?>
 
@@ -56,7 +55,7 @@ if(isset($_POST['submit'])){
                 <input type="text" id="name" name="name" autocomplete="off" class="input">
                 <br>
                 <span id="nameError" class="errors"></span>
-               
+
             </div>
 
 

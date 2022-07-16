@@ -1,19 +1,20 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;400&family=Rubik+Moonrocks&display=swap');
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    font-family: 'Arima', cursive;
-    font-size: 17px;
-  }
-
-  
+body {
+  margin: 0;
+  font-family: 'Arima', cursive;
+  font-size: 17px;
+}
 
 
-  /* Style the buttons */
+
+
+/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -31,44 +32,44 @@
   color: white;
 }
 
-   .nav-item button{
-    border: none;
-    background-color: #96edf3;
-    color: #fff;
-    padding: 8px;
-    border-radius: 15px;
-   }
-  
-   #head{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-   
-   }
-
-.glry{
-    color: aliceblue;
-    padding: 150px;
-    text-align: center;
+.nav-item button {
+  border: none;
+  background-color: #96edf3;
+  color: #fff;
+  padding: 8px;
+  border-radius: 15px;
 }
 
-.glry h1{
-    font-size: 60px;
+#head {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+
 }
 
-   /* Portfolio */
-  .portfolio {
-    padding: 30px;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    background-color: rgb(90, 61, 61);
-    
-  }
-  
-  .portfolio img {
-    width: 100%;
-    border-radius: 10px;
-    
-  }
+.glry {
+  color: aliceblue;
+  padding: 150px;
+  text-align: center;
+}
+
+.glry h1 {
+  font-size: 60px;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 30px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: rgb(90, 61, 61);
+
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 10px;
+
+}

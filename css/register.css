@@ -1,114 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans:wght@300;400&family=Roboto:wght@100;400&family=Rubik+Moonrocks&display=swap');
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arima', cursive;
-    font-size: 17px;
-   
-     
-  }
-  #head{
-    background-image: linear-gradient(to bottom right, rgb(255, 0, 64), rgb(199, 93, 231), rgb(139, 139, 219) ,rgb(199, 93, 231) ,rgb(255, 0, 64));
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
-    height: 100%;
-  }
-  
-  .message{
-    margin:10px 0;
-    width: 100%;
-    border-radius: 5px;
-    padding:10px;
-    text-align: center;
-    background-color: red;
-    color:white;
-    font-size: 20px;
- }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arima', cursive;
+  font-size: 17px;
 
-  .form{
+
+}
+
+#head {
+  background-image: linear-gradient(to bottom right, rgb(255, 0, 64), rgb(199, 93, 231), rgb(139, 139, 219), rgb(199, 93, 231), rgb(255, 0, 64));
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  height: 100%;
+}
+
+.message {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+
+.form {
   position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 600px;
-	padding: 20px;
-	background: rgba(0,0,0,.4);
-	box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0,0,0,.5);
-	border-radius: 10px;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, .4);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+  border-radius: 10px;
+}
 
-  .form h2{
-    margin: 0 0 5px;
-	padding: 0;
-	color: #FFF;
-	text-align: center;
+.form h2 {
+  margin: 0 0 5px;
+  padding: 0;
+  color: #FFF;
+  text-align: center;
   font-size: 40px;
-  }
+}
 
-  .form .inputBox{
-    padding-top: 10px;
-  }
+.form .inputBox {
+  padding-top: 10px;
+}
 
-  .form .inputBox1{
-    padding-top: 20px;
-  }
-  .form .inputBox input{
-   position: relative;
-	padding: 10px 40px;
-	font-size: 18px;
-	color: #FFF;
-	letter-spacing: 1px;
-	border: none;
-	border-bottom: 1px solid #FFF;
-	outline: none;
-	background: transparent;
-  }
+.form .inputBox1 {
+  padding-top: 20px;
+}
 
-  .form .inputBox label{
-	top: 0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 18px;
-	color: #FFF;
-	pointer-events: none;
-	
-  }
+.form .inputBox input {
+  position: relative;
+  padding: 10px 40px;
+  font-size: 18px;
+  color: #FFF;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  outline: none;
+  background: transparent;
+}
 
-  .form .errors{
-    color: rgb(170, 2, 2);
-  }
+.form .inputBox label {
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #FFF;
+  pointer-events: none;
 
-  .form .btn{
-    color: #FFF;
-    padding: 7px;
-    border: 1px solid #FFF;
-    background: transparent;
-    border-radius: 30px;
-  }
-  .form .btn:hover{
-    color: black;
-    background: aqua;
-  }
+}
 
-  .signin{
-    padding-top: 20px;
-    display: flex;
-    color: #FFF;
-  }
-  .signin p{
+.form .errors {
+  color: rgb(170, 2, 2);
+}
 
-    font-size: 18px;
-    padding-right: 5px;
-  }
+.form .btn {
+  color: #FFF;
+  padding: 7px;
+  border: 1px solid #FFF;
+  background: transparent;
+  border-radius: 30px;
+}
 
-  .signin a{
-    color: #FFF;
-    font-size: 18px;
-    margin-top: 18px;
-  }
+.form .btn:hover {
+  color: black;
+  background: aqua;
+}
+
+.signin {
+  padding-top: 20px;
+  display: flex;
+  color: #FFF;
+}
+
+.signin p {
+
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.signin a {
+  color: #FFF;
+  font-size: 18px;
+  margin-top: 18px;
+}

@@ -1,7 +1,7 @@
 function validate() {
-    var errors=document.getElementsByClassName('errors');
-    for(let item of errors)
-    item.innerHTML="";
+    var errors = document.getElementsByClassName('errors');
+    for (let item of errors)
+        item.innerHTML = "";
 
     var check = 0;
     var name = document.getElementById('name').value.trim();
@@ -80,15 +80,15 @@ function validate() {
 
     var cpassword = document.getElementById('cpassword').value;
 
-            if (cpassword != password) {
-                document.getElementById('cpasswordError').innerHTML = "Password Not Match ";
-                check = 1;
-            }
+    if (cpassword != password) {
+        document.getElementById('cpasswordError').innerHTML = "Password Not Match ";
+        check = 1;
+    }
 
 
 
-    if(check==1)
-    return false;
+    if (check == 1)
+        return false;
 
 }
 

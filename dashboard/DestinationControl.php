@@ -43,10 +43,10 @@ if(mysqli_num_rows($result)>0){
                         <thead>
                             <th>Id</th>
                             <th>Location</th>
-                            <th>Price</th>         
+                            <th>Price</th>
                             <th>Package</th>
                             <th>Description</th>
-                            <th>image</th>     
+                            <th>image</th>
                             <th>Action</th>
                         </thead>
                         <tbody>
@@ -60,13 +60,13 @@ if(mysqli_num_rows($result)>0){
                                 <td><?php echo $row['price'];?></td>
                                 <td><?php echo $row['package'];?></td>
                                 <td style=" width: 40%;"><?php echo $row['description'];?></td>
-                                <td><img src="upload_image/<?php echo $row['image']; ?>" style=" height:100px;" class="card-img-top"
-                alt="..."></td>
-                               
+                                <td><img src="upload_image/<?php echo $row['image']; ?>" style=" height:100px;"
+                                        class="card-img-top" alt="..."></td>
+
 
 
                                 <td>
-                                    <input type="submit" name="submit" id="btn" value="Edit"> 
+                                    <input type="submit" name="submit" id="btn" value="Edit">
                                     <a href='destination_delete-inline.php?id=<?php echo $row['d_id'];?>'
                                         onclick="return checkDelete()" class="btn3">Delete</a>
                                 </td>

@@ -27,5 +27,4 @@
 
 
 
-
 <script src="js/verifymail.js"></script>

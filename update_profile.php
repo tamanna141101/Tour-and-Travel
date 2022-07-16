@@ -28,7 +28,6 @@ if(isset($_POST['update_profile'])){
 ?>
 
 
-
 <!-- custom css file link  -->
 <link rel="stylesheet" href="css/update_profile.css">
 
